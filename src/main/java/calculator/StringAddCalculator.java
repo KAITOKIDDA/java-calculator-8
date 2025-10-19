@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 public class StringAddCalculator {
 
     // 커스텀 구분자 형식 (//(단일 문자)\n(숫자열))을 파싱하기 위한 패턴
-    private static final Pattern CUSTOM_DELIMITER_PATTERN = Pattern.compile("//(.)\\R(.*)");
+    private static final Pattern CUSTOM_DELIMITER_PATTERN = Pattern.compile("//(.)\\\\n(.*)");
     // 기본 구분자는 쉼표 또는 콜론
     private static final String DEFAULT_DELIMITERS = "[,:]";
 
